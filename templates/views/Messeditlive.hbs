@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Live</title>
+    <link rel="stylesheet" href="css/Messeditlive.css">
+    
+</head>
+   
+<body>
+    <section>
+    {{>Messnavbar}}
+  <!--for demo wrap-->
+  <h1>Fixed Table header</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Food Item</th>
+          <th>Hostel 1</th>
+          <th>Hostel 2</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <form method="POST" action="/Messeditlive">
+        <tr>
+          <td><input type="text" placeholder="fooditem1" name="fooditem1" value="NULL"/></td>
+          <td> <input type="text" name="H1foodquantity1" placeholder="quantity" value=0 /></td>
+          <td><input type="text" name="H2foodquantity1" placeholder="quantity" value=0 /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="fooditem2" name="fooditem2" value="NULL"/></td>
+          <td> <input type="text" name="H1foodquantity2" placeholder="quantity" value=0 /></td>
+          <td><input type="text" name="H2foodquantity2" placeholder="quantity" value=0 /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="fooditem3" name="fooditem3" value="NULL"/></td>
+          <td> <input type="text" name="H1foodquantity3" placeholder="quantity" value=0 /></td>
+          <td><input type="text" name="H2foodquantity3" placeholder="quantity" value=0 /></td>
+        </tr>
+        <tr> 
+          <td><input type="text" placeholder="fooditem4" name="fooditem4" value="NULL"/></td>
+          <td> <input type="text" name="H1foodquantity4" placeholder="quantity" value=0 /></td>
+          <td><input type="text" name="H2foodquantity4" placeholder="quantity" value=0 /></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="fooditem5" name="fooditem5" value="NULL"/></td>
+          <td> <input type="text" name="H1foodquantity5" placeholder="quantity" value=0 /></td>
+          <td><input type="text" name="H2foodquantity5" placeholder="quantity" value=0 /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td><button type="submit">Submit the live chart</button></td>
+        </tr>
+        {{!-- <button type="submit">Submit the live chart</button> --}}
+        </form>
+
+      </tbody>
+    </table>
+        
+  </div>
+</section>
+
+
+<script>
+
+</script>
+</body>
+
+    
